@@ -25,10 +25,4 @@ A Spring Boot REST API project for Todo Management using CRUD operations.
 | PUT | /todos | Update Todo |
 | DELETE | /todos/{id} | Delete Todo |
 
-## Project Structure
 
-```text
-controller/
-service/
-repository/
-entity/
