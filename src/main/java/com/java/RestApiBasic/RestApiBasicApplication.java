@@ -1,12 +1,12 @@
-package com.Todo.RestApiBasic;
+package com.java.RestApiBasic;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RestApiBasic {
+public class RestApiBasicApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(RestApiBasic.class, args);
+		SpringApplication.run(RestApiBasicApplication.class, args);
 	}
 }

@@ -1,4 +1,4 @@
-package com.Todo.RestApiBasic.controller;
+package com.java.RestApiBasic.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,8 +6,8 @@ import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import com.Todo.RestApiBasic.entity.TodoEntity;
-import com.Todo.RestApiBasic.service.TodoService;
+import com.java.RestApiBasic.entity.TodoEntity;
+import com.java.RestApiBasic.service.TodoService;
 
 import java.util.List;
 
@@ -37,10 +37,7 @@ public class TodoController {
     ResponseEntity<List<TodoEntity>> getAllTodos() {
         return new ResponseEntity<List<TodoEntity>>(todoService.getAllTodos(), HttpStatus.OK);
 }
-    @GetMapping("/page")
-    ResponseEntity<Page<TodoEntity>>getTodosWithPage(@RequestParam int page, @RequestParam int size) {
-        return new ResponseEntity<>(todoService.getTodosWithPage(page, size), HttpStatus.OK);
-    }
+
 
     @PutMapping("/update")
     ResponseEntity<TodoEntity> updateTodo(@RequestBody TodoEntity todo) {

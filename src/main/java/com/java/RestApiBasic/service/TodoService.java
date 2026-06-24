@@ -1,11 +1,9 @@
-package com.Todo.RestApiBasic.service;
+package com.java.RestApiBasic.service;
 
-import com.Todo.RestApiBasic.entity.TodoEntity;
-import com.Todo.RestApiBasic.repository.TodoRepository;
+import com.java.RestApiBasic.entity.TodoEntity;
+import com.java.RestApiBasic.repository.TodoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
+
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -38,14 +36,6 @@ public class TodoService {
              todoRepository.deleteById(id);
      }
 
-     public void detetetodo(TodoEntity todo) {
-             todoRepository.delete(todo);
-     }
-
-     public Page<TodoEntity> getTodosWithPage(int page, int size) {
-         Pageable pageable = PageRequest.of(page, size);
-         return todoRepository.findAll(pageable);
-     }
 }
 
 

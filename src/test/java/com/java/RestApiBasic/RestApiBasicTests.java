@@ -1,4 +1,4 @@
-package com.Todo.RestApiBasic;
+package com.java.RestApiBasic;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
